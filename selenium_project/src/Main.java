@@ -9,7 +9,7 @@ public class Main {
 		options.addArguments("start-maximized");
 		ChromeDriver driver = new ChromeDriver(options);
 		//driver.manage().window().maximize();
-		driver.navigate().to("http://www.leafground.com/pages/Window.html");
+		driver.navigate().to("http://www.leafground.com/pages/Window.html");//.........
 		String mainWindow = driver.getWindowHandle();
 		System.out.println(driver.getTitle());
 		driver.findElement(By.id("color")).click();
